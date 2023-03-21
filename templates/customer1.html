@@ -16,7 +16,7 @@
         <b><a href="{{url_for('honey')}}">Home</a> |</b>
         <nav>
             <span id="name"></span>
-            <a href="{{url_for('honey')}}">Home</a> |
+            <a href="{{url_for('logout')}}">Home</a> |
             <a href="./services.html">Services</a> |
             <a href="./booking.html">Booking</a> |
             <a href="{{url_for('logout')}}" >Logout | </a>
@@ -27,7 +27,9 @@
 
     <main>
         <section>
-            <h2>Welcome {{session["username"]}} To TraceWare Family</h2>
+            <h2 class="inline">
+                Welcome <span style="color: brown;">{{session["username"]}} </span>To  TraceWare Family
+             </h2>
             <img src="../static/images/TraceBox.jpg" width="500" height="300">
             <p>
                 Looking to keep your car functioning smoothly? Save money and opt for AutoMob-Mechanic's
@@ -40,7 +42,7 @@
                 <li>Break pad cleaning.</li>
             </ul>
            <button>Book Service</button>
-           <button>&#8592; Go Back</button>
+           <a href="{{url_for('logout')}}"><button>&#8592; Go Back</button></a>
 
         </section>
     </main>

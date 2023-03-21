@@ -2,3 +2,13 @@ main{
     margin-left: 100px;
     margin-top: 25px;
 }
+input[type=submit] {
+    border-radius: 22%;
+    background-color: #0e91f5;
+    border: none;
+    color: white;
+    padding: 14px 26px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}

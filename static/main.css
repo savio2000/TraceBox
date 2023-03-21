@@ -2,7 +2,15 @@ a{
     text-decoration: none;
     color:white;
 }
-
+.sipi
+{
+    
+    color: aqua;
+}
+/* .inline
+{
+    display: inline-block;
+} */
 .active{
     border-bottom: 2px solid white;
 }

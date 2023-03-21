@@ -25,7 +25,7 @@ def login():
         cur.execute("select * from customer where username=? and password=?",(username,password))
         data=cur.fetchone()
         if data:
-            session["username"]=data["username"]
+            session["username"]=data["username"].capitalize().split(" ")[0]
             session["password"]=data["password"]
             return redirect("customer")
     return render_template('login.html')   
